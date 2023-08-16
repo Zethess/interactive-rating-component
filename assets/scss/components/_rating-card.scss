@@ -1,0 +1,21 @@
+@import './button';
+@import './rating-inputs';
+.rating-card-h1{
+    @include flex-column-center();
+    &::before{
+        @include flex-column-center($align-items: center,$justify-content:center);
+        @include size-setup(52px,46px);
+        content: url('/assets/images/icon-star.svg');
+        background-color: $medium-grey-star-background;
+        border-radius: 50%;
+        padding-top: 3px;
+        margin-bottom: 25px;
+    }
+}
+.rating-card-paragraph{
+    margin: 20px 0px;
+    color: $light-grey;
+}
+
+
+

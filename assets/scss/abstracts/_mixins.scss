@@ -1,0 +1,62 @@
+/// Gestor Responsive
+/// @access public
+/// @param {String} $breakpoint - Punto de ruptura
+/// @requires $breakpoints
+/// 
+@mixin respond-to($breakpoint) {
+    $raw-query: map-get($breakpoints, $breakpoint);
+    //Si existe 
+    @if $raw-query { 
+    //se convierte en una consulta en forma de cadena utilizando la función unquote si es una cadena o inspect si es una lista
+      $query: if(
+        type-of($raw-query) == 'string',
+        unquote($raw-query),
+        inspect($raw-query)
+      );
+  
+      @media #{$query} {
+        @content;
+      }
+    } @else {
+      @error 'No se ha encontrado un valor para `#{$breakpoint}`. '
+           + 'Por favor, asegúrate que está definido en el mapa `$breakpoints`.';
+    }
+  }
+
+@mixin flex-column-center($flex-direction: column, $align-items: '',$justify-content: ''){
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+@mixin input-default-conf{
+  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}
+@mixin background-color($background: $linear-gradient-purple, $color: $white){
+  background: $background;
+  color: $color;
+}
+
+@mixin font-setup($font-weight){
+  font: {
+    family: $font-family-overpass;
+    size: $font-size-15;
+    weight: $font-weight;
+  }
+}
+@mixin size-setup($width,$height){
+  width: $width;
+  height: $height;
+}
+@mixin childs-card-setup($transformY){
+  position: absolute;
+  transform: rotateY($transformY);
+  background-color: $dark-blue;
+  padding: 25px 30px;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+ 
+}

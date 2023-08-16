@@ -1,0 +1,19 @@
+.thank-you-card{
+    @include flex-column-center($align-items: center,$justify-content:center);
+    text-align: center;
+    &::before{
+        content: url('/assets/images/illustration-thank-you.svg');
+        margin-top: 20px;
+    }
+}
+.selected-rating-paragraph{
+    @include background-color( $medium-grey-star-background,$orange);
+    opacity: 0.7;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+.thank-you-card-description-paragraph{
+    margin: 20px 0px;
+    color: $light-grey;
+}

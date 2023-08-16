@@ -1,0 +1,15 @@
+.submit-button{
+    @include size-setup(100%,50px);
+    @include background-color($orange,$white);
+    @include font-setup($font-weight-700);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    border: none;
+    margin: 20px 0px;
+    cursor: pointer;
+    &:hover{
+        background-color: $white;
+        color: $orange;
+    }
+}
