@@ -1,9 +1,10 @@
 @charset "UTF-8";
 body {
   min-height: 100vh;
+  width: 100%;
   background-color: hsl(216, 12%, 8%);
   color: hsl(0, 0%, 100%);
-  margin: 0 20px;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
 }
@@ -11,6 +12,7 @@ body {
 .card {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   width: 100%;
   max-width: 500px;
@@ -26,7 +28,6 @@ body {
   border-radius: 20px;
   transform-style: preserve-3d;
   backface-visibility: hidden;
-  transform-origin: right center;
 }
 
 .thank-you-card {
@@ -37,7 +38,6 @@ body {
   border-radius: 20px;
   transform-style: preserve-3d;
   backface-visibility: hidden;
-  transform-origin: right center;
 }
 
 .card.flip .rating-card {
