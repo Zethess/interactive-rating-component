@@ -1,5 +1,6 @@
 .thank-you-card{
     @include flex-column-center($align-items: center,$justify-content:center);
+    @include childs-card-setup(180deg);
     text-align: center;
     &::before{
         content: url('/assets/images/illustration-thank-you.svg');

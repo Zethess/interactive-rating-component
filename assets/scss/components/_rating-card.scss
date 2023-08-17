@@ -1,5 +1,8 @@
 @import './button';
 @import './rating-inputs';
+.rating-card {
+    @include childs-card-setup(0deg);  
+}
 .rating-card-h1{
     @include flex-column-center();
     &::before{

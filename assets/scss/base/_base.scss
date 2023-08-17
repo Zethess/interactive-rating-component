@@ -1,5 +1,4 @@
 body {
-    
     min-height: 100vh;
     width: 100%;
     background-color: $very-dark-blue;
@@ -8,34 +7,22 @@ body {
     display: flex;
     justify-content: center;
 }
-
 .card {
     display: flex;
     align-items: center;
     justify-content:center;
     position: relative;
     width: 100%;
-    max-width: 500px;
-    perspective: 1000px; /* Añadido para el efecto 3D */
-    /* Añade una transición suave */
-  
+    max-width: 420px;
+    perspective: 1000px;
 }
-  
-  .rating-card {
-    @include childs-card-setup(0deg);
-    
-    
-}
-.thank-you-card {
-    @include childs-card-setup(180deg);
-     
-}
-.card.flip .rating-card {
+.card.flip{
+ .rating-card {
     transition: transform 0.5s;
     transform: rotateY(180deg);
   }
-  
-  .card.flip .thank-you-card {
-    transition: transform 0.5s;
+  .thank-you-card {
+    transition: transform 1s;
     transform: rotateY(0deg);
   }
+}

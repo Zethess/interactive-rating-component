@@ -1,0 +1,17 @@
+
+//   .rating-card {
+//     @include childs-card-setup(0deg);     
+// }
+// .thank-you-card {
+//     @include childs-card-setup(180deg);
+     
+// }
+// .card.flip .rating-card {
+//     transition: transform 0.5s;
+//     transform: rotateY(180deg);
+//   }
+  
+//   .card.flip .thank-you-card {
+//     transition: transform 0.5s;
+//     transform: rotateY(0deg);
+//   }
