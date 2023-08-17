@@ -3,7 +3,7 @@
     @include childs-card-setup(180deg);
     text-align: center;
     &::before{
-        content: url('/assets/images/illustration-thank-you.svg');
+        content: url('../images/illustration-thank-you.svg');
         margin-top: 20px;
     }
 }
