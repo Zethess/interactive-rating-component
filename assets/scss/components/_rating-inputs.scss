@@ -14,9 +14,9 @@
     border-radius: 50%;
     cursor: pointer;
     &:hover{
-        background-color: $orange;
+        @include background-color($orange,$white);
     }
 }
 .form-inputs:checked + .opt {
-    background-color: $medium-grey;
+    @include background-color($medium-grey,$white);
 }

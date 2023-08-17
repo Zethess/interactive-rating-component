@@ -6,6 +6,11 @@ class TemplateManager {
         event.preventDefault(); // Prevenir la recarga de la página
         this.changeThankYouCardInputValue($(event.currentTarget));
       });
+      $("input[name='rating']").change(function() {
+        const btn=$("#flipButton");
+        btn.prop("disabled", false);
+        btn.addClass('checked');
+      });
       $("#flipButton").click(function() {
           $(".card").toggleClass("flip");
       });

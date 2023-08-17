@@ -7,9 +7,13 @@
     border-radius: 30px;
     border: none;
     margin: 20px 0px;
-    cursor: pointer;
-    &:hover{
-        background-color: $white;
-        color: $orange;
+    &:disabled{
+        cursor: not-allowed;
+        opacity: 0.8;
+    }
+    &.checked:hover{
+        @include background-color($white,$orange);
+        cursor: pointer;
+        opacity: 1;
     }
 }
