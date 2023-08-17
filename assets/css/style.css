@@ -52,6 +52,7 @@ body {
   border-radius: 30px;
   border: none;
   margin: 20px 0px;
+  padding-top: 3px;
 }
 .submit-button:disabled {
   cursor: not-allowed;
