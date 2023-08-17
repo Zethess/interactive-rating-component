@@ -9,7 +9,7 @@
 }
 .opt {
     @include size-setup(3rem,48px);
-    @include background-color($medium-grey-star-background,$white);
+    @include background-color($medium-grey-star-background,$light-grey);
     @include flex-column-center($align-items: center,$justify-content:center);
     border-radius: 50%;
     cursor: pointer;

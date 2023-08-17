@@ -76,7 +76,7 @@ body {
   width: 3rem;
   height: 48px;
   background: hsla(216, 12%, 54%, 0.1);
-  color: hsl(0, 0%, 100%);
+  color: hsl(217, 12%, 63%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +95,7 @@ body {
 .rating-card {
   position: absolute;
   transform: rotateY(0deg);
-  background-color: hsl(213, 20%, 18%);
+  background-image: linear-gradient(to top, hsla(213, 20%, 18%, 0.4) 15%, hsl(213, 20%, 18%));
   padding: 25px 30px;
   border-radius: 20px;
   transform-style: preserve-3d;
@@ -115,7 +115,7 @@ body {
   justify-content: center;
   width: 52px;
   height: 46px;
-  content: url("/assets/images/icon-star.svg");
+  content: url("../images/icon-star.svg");
   background-color: hsla(216, 12%, 54%, 0.1);
   border-radius: 50%;
   padding-top: 3px;
@@ -134,7 +134,7 @@ body {
   justify-content: center;
   position: absolute;
   transform: rotateY(180deg);
-  background-color: hsl(213, 20%, 18%);
+  background-image: linear-gradient(to top, hsla(213, 20%, 18%, 0.4) 15%, hsl(213, 20%, 18%));
   padding: 25px 30px;
   border-radius: 20px;
   transform-style: preserve-3d;
@@ -142,7 +142,7 @@ body {
   text-align: center;
 }
 .thank-you-card::before {
-  content: url("/assets/images/illustration-thank-you.svg");
+  content: url("../images/illustration-thank-you.svg");
   margin-top: 20px;
 }
 
